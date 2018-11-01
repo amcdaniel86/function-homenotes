@@ -190,3 +190,62 @@ var f = function(x) {
 var numbers = [0, 1, 2, 5, 10];
 var cube = map(f,numbers);
 console.log(cube);
+
+let arrayNames = ["Ped", "Ali", "Ted", "Bert"];
+
+console.log(arrayNames[2])
+
+arrayNames.push("Hurrah");
+console.log(arrayNames[4])
+
+arrayNames.unshift("Leo");
+console.log(arrayNames[0])
+
+arrayNames.splice(0,1);
+console.log(arrayNames)
+arrayNames.splice(4,1);
+console.log(arrayNames)
+
+arrayNames.pop();
+arrayNames.pop();
+console.log(arrayNames.pop)
+console.log(arrayNames)
+arrayNames.shift();
+console.log(arrayNames)
+console.log(arrayNames)
+console.log(arrayNames)
+
+let arrAni = ["bro", "tuna", "sunfish", "bark", "lion", "rhino", "stink"];
+
+for(let i=0; i < arrAni.length; i++) {
+  console.log(arrAni[i]);
+}
+
+arrAni.forEach(function(n){
+  console.log(n);
+})
+
+arrAni.forEach(function(element){
+  console.log(element*2);
+
+});
+
+let raceResults = ['helen', 'john', 'peter', 'mary'];
+raceResults.forEach(function(elem, index){
+  console.log(elem + ' finished the race in ' + (
+  index+1) + ' position!');
+});
+
+function printStars(howMany){
+  console.log("*".repeat(howMany));
+}
+[1,2,3,4,5].forEach(function(num){
+  printStars(num)
+});
+
+let phrase = "this is so long i cant belive how long this is wow what a long string";
+
+let words = phrase.split(" ");
+console.log(words);
+console.log(words[5]);
+console.log(words.length);
